@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="cancel_appointments_form" model="ir.ui.view">
+        <field name="name">cancel.appointments.form</field>
+        <field name="model">cancel.appointments</field>
+        <field name="arch" type="xml">
+            <form string="Cancel Appointments">
+                <group>
+                    <group>
+                        <field name="appointment_id"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_cancel" string="Cancel Appointment" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button special="cancel" string="Discard" class="btn-secondary" data-hotkey="z"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_cancel_appointment" model="ir.actions.act_window">
+        <field name="name">cancell Appointments</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cancel.appointments</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+
+    <menuitem id="menu_cancel_appointments_root"
+              name="Cancellation"
+              action="action_cancel_appointment"
+              parent="menu_submenu_root"
+              sequence="1"/>
+
+</odoo>

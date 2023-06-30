@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_custom_wizard.patient,custom_wizard.patient,model_patient,base.group_user,1,1,1,1
+access_custom_wizard.appointments,custom_wizard.appointments,model_appointments,base.group_user,1,1,1,1
+access_custom_wizard.cancel.appointments,custom_wizard.cancel.appointments,model_cancel_appointments,base.group_user,1,1,1,1

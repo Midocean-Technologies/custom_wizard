@@ -1,0 +1,14 @@
+<odoo>
+
+    <data>
+        <menuitem id="menu_custom_wizard_root"
+                  name='Custom Wizard'
+                  sequence="0"/>
+
+      <menuitem id="menu_submenu_root"
+              name="Appointments"
+              parent="menu_custom_wizard_root"
+              sequence="1"/>
+
+    </data>
+</odoo>
